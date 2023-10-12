@@ -9,7 +9,9 @@
   <body class="bg-gray-100">
     <!-- app bar -->
     <div class="flex md:hidden items-center justify-between mt-10 px-4 mb-6">
-      <div>DIGITIZE</div>
+      <div class="w-12 h-10">
+        <img class="w-full h-full" src="/assets/images/mobile-logo.png" alt="logo">
+      </div>
       <div class="text-lg font-bold text-slate-800">ساعت هوشمند</div>
       <div class="w-7 h-7 bg-white shadow-lg flex justify-center items-center rounded cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -38,6 +40,31 @@
       </div>
     </div>
 
+    <!-- desktop navbar -->
+    <nav class="bg-white p-4 shadow-lg sticky top-0 hidden md:flex items-center justify-between z-10 mb-5">
+      <ul class="flex items-center gap-x-4 text-slate-800 text-lg">
+        <li>
+          <a class="block p-2 w-28" href="#">
+            <img class="w-full" src="/assets/images/desktop-logo.png" alt="logo">
+          </a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-200" href="#">خانه</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-200" href="#">تلفن همراه</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-200" href="#">لپ تاپ</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-200" href="#">ساعت هوشمند</a>
+        </li>
+      </ul>
+      <div>search bar</div>
+    </nav>
+
+    <!-- content -->
     <div class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
       <!-- sidebar -->
       <div class="hidden md:block col-span-4 lg:col-span-3 row-span-2">

@@ -86,9 +86,9 @@
             <h3 class="text-xl font-bold text-orange-500 mb-3">فیلتر</h3>
 
             <!-- ACC. No.1 -->
-            <div>
+            <div class="text-slate-800 mb-3" x-data="{isOpenBrand: true}">
               <!-- ACC #1 header -->
-              <div class="mb-3 flex items-center justify-between hover:bg-gray-50 w-full p-2 rounded-md cursor-pointer text-slate-800">
+              <div @click="isOpenBrand = !isOpenBrand" class="flex items-center justify-between hover:bg-gray-50 w-full p-2 rounded-md cursor-pointer">
                 <div class="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" fill="none">
                     <circle cx="10.5" cy="9.5" r="9.5" fill="#AFAFAF" fill-opacity=".29"/>
@@ -99,36 +99,36 @@
                   </svg>
                   <span class="mr-2 mt-2">برند محصول</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg :class="isOpenBrand ? 'rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-2 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </div>
 
               <!-- ACC #1 content -->
-              <div class="px-2 flex flex-col gap-y-2">
+              <div x-show="isOpenBrand === true" class="px-7 py-2 flex flex-col gap-y-2">
                 <label for="apple" class="py-1 flex items-center cursor-pointer">
-                  <input type="checkbox" name="brand" id="apple">
+                  <input type="checkbox" name="brand" id="apple" class="form-checkbox rounded">
                   <span class="mr-2">اپل</span>
                 </label>
                 <label for="samsung" class="py-1 flex items-center cursor-pointer">
-                  <input type="checkbox" name="brand" id="samsung">
+                  <input type="checkbox" name="brand" id="samsung" class="form-checkbox rounded">
                   <span class="mr-2">سامسونگ</span>
                 </label>
                 <label for="xiaomi" class="py-1 flex items-center cursor-pointer">
-                  <input type="checkbox" name="brand" id="xiaomi">
+                  <input type="checkbox" name="brand" id="xiaomi" class="form-checkbox rounded">
                   <span class="mr-2">شیائومی</span>
                 </label>
                 <label for="huawei" class="py-1 flex items-center cursor-pointer">
-                  <input type="checkbox" name="brand" id="huawei">
+                  <input type="checkbox" name="brand" id="huawei" class="form-checkbox rounded">
                   <span class="mr-2">هواوی</span>
                 </label>
               </div>
             </div>
 
             <!-- ACC. No.2 -->
-            <div>
+            <div class="text-slate-800 mb-3" x-data="{isOpenColor: true}">
               <!-- ACC #2 header -->
-              <div class="mb-3 flex items-center justify-between hover:bg-gray-50 w-full p-2 rounded-md cursor-pointer text-slate-800">
+              <div @click="isOpenColor = !isOpenColor" class="flex items-center justify-between hover:bg-gray-50 w-full p-2 rounded-md cursor-pointer">
                 <div class="flex items-center">
                   <svg width="19" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.833 9.625V17.5c0 .63-.256 1.207-.665 1.627l-.023.024a1.83 1.83 0 0 1-.163.146 2.041 2.041 0 0 1-.578.35c-.064.029-.128.052-.192.075-.228.076-.473.111-.712.111a2.48 2.48 0 0 1-.467-.046c-.075-.018-.151-.035-.227-.059a2.117 2.117 0 0 1-.268-.099c0-.006 0-.006-.006 0a2.946 2.946 0 0 1-.467-.286l-.006-.006a1.598 1.598 0 0 1-.21-.186c-.064-.07-.128-.14-.192-.216a2.94 2.94 0 0 1-.286-.467c.006-.006.006-.006 0-.006 0 0 0-.006-.006-.011a3.334 3.334 0 0 1-.093-.257c-.024-.076-.041-.152-.059-.227a2.483 2.483 0 0 1-.046-.467V9.625c0-.875.583-1.459 1.458-1.459h1.75c.875 0 1.458.584 1.458 1.459Z" stroke="#222F5D" stroke-width=".875" stroke-linecap="round" stroke-linejoin="round"/>
@@ -138,19 +138,36 @@
                   </svg>
                   <span class="mr-2 mt-2">رنگ محصول</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg :class="isOpenColor ? 'rotate-180' : ''" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-2 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </div>
 
               <!-- ACC #2 content -->
-              <div class="px-2 flex flex-col gap-y-2"></div>
+              <div x-show="isOpenColor === true" class="px-7 py-2 flex flex-col gap-y-2">
+                <label for="blue" class="py-1 flex items-center cursor-pointer">
+                  <input type="checkbox" name="color" id="blue" class="form-checkbox rounded">
+                  <span class="mr-2">آبی</span>
+                </label>
+                <label for="red" class="py-1 flex items-center cursor-pointer">
+                  <input type="checkbox" name="color" id="red" class="form-checkbox rounded">
+                  <span class="mr-2">قرمز</span>
+                </label>
+                <label for="green" class="py-1 flex items-center cursor-pointer">
+                  <input type="checkbox" name="color" id="green" class="form-checkbox rounded">
+                  <span class="mr-2">سبز</span>
+                </label>
+                <label for="black" class="py-1 flex items-center cursor-pointer">
+                  <input type="checkbox" name="color" id="black" class="form-checkbox rounded">
+                  <span class="mr-2">مشکی</span>
+                </label>
+              </div>
             </div>
 
             <!-- ACC. No.3 -->
-            <div>
+            <div class="text-slate-800 mb-3">
               <!-- ACC #3 header -->
-              <div class="mb-3 flex items-center justify-between hover:bg-gray-50 w-full p-2 rounded-md cursor-pointer text-slate-800">
+              <div class="flex items-center justify-between hover:bg-gray-50 w-full p-2 rounded-md cursor-pointer">
                 <div class="flex items-center">
                   <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.523 14.904c-.245.239-.385.583-.35.95.053.63.63 1.091 1.26 1.091h1.109v.695a2.198 2.198 0 0 1-2.194 2.193H3.652a2.198 2.198 0 0 1-2.194-2.193v-3.926c0-1.208.986-2.194 2.194-2.194h6.696c1.208 0 2.194.986 2.194 2.194v.84h-1.179c-.326 0-.624.128-.84.35Z" stroke="#222F5D" stroke-width=".875" stroke-linecap="round" stroke-linejoin="round"/>
@@ -159,7 +176,7 @@
                   </svg>
                   <span class="mr-2 mt-2">محدوده قیمت</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-2 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </div>

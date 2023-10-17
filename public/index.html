@@ -82,7 +82,7 @@
     <div class="md:px-4 lg:px-6 container mx-auto xl:max-w-screen-2xl grid grid-cols-12 xl:grid-cols-11 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mb-16 md:mb-0">
       <!-- sidebar -->
       <div class="hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2">
-        <div class="bg-white p-5 rounded-xl max-h-[calc(100vh_-_140px)] overflow-auto sticky top-28">
+        <div class="bg-white p-5 rounded-xl">
           <!-- categories -->
           <div x-data="{category: 'mobile'}" class="mb-5 pb-6 border-b border-b-stone-100">
             <h3 class="text-xl font-bold text-orange-500 mb-3">دسته بندی</h3>
@@ -313,7 +313,7 @@
     </div>
 
     <!-- bottom Navigation -->
-    <div class="bg-white border-t-2 fixed bottom-0 left-0 right-0 w-full rounded-tr-md rounded-tl-md px-2 flex items-center z-10 md:hidden">
+    <div class="bg-white fixed bottom-0 left-0 right-0 w-full rounded-tr-md rounded-tl-md px-2 flex items-center z-10 shadow-[0_-4px_8px_0px_rgba(0,0,0,0.1)] md:hidden">
       <nav class="w-full container mx-auto">
         <ul x-data="{activeBottomTab: 1, activeTabClass: 'text-slate-700 font-bold'}" class="flex items-center justify-between gap-x-2 w-full">
           <li @click="activeBottomTab = 1" :class="activeBottomTab === 1 ? activeTabClass : ''" class="flex-auto text-sm text-gray-400">

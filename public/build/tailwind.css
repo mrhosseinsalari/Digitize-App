@@ -915,12 +915,6 @@ video {
 .p-5{
   padding: 1.25rem;
 }
-.p-4{
-  padding: 1rem;
-}
-.p-8{
-  padding: 2rem;
-}
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -928,6 +922,10 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .px-7{
   padding-left: 1.75rem;
@@ -941,25 +939,13 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.py-2\.5{
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .pb-6{
   padding-bottom: 1.5rem;
@@ -984,10 +970,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 .font-bold{
   font-weight: 700;
@@ -1098,18 +1080,6 @@ video {
     padding-right: 1rem;
   }
 }
-@media (min-width: 480px){
-
-  .min-\[480px\]\:gap-x-4{
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
-  }
-
-  .min-\[480px\]\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
 @media (min-width: 640px){
 
   .sm\:h-5{
@@ -1144,20 +1114,8 @@ video {
     grid-column: span 8 / span 8;
   }
 
-  .md\:mb-0{
-    margin-bottom: 0px;
-  }
-
-  .md\:mb-4{
-    margin-bottom: 1rem;
-  }
-
   .md\:mb-5{
     margin-bottom: 1.25rem;
-  }
-
-  .md\:mb-6{
-    margin-bottom: 1.5rem;
   }
 
   .md\:block{
@@ -1213,10 +1171,6 @@ video {
 
   .lg\:col-span-9{
     grid-column: span 9 / span 9;
-  }
-
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3{

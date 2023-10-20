@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="./build/tailwind.css" />
     <title>Single Product</title>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <!-- app bar -->
     <div class="flex md:hidden items-center justify-between mt-10 px-4 mb-6">
       <div class="w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
       </div>
-      <div class="text-lg font-bold text-slate-800">گوشی آیفون 13 pro max</div>
-      <div class="w-7 h-7 bg-white shadow-lg flex justify-center items-center rounded cursor-pointer">
+      <div class="text-lg font-bold text-slate-800">آیفون ۱۳ مدل ۱۲۸ گیگابایت</div>
+      <div class="w-7 h-7 bg-white shadow-lg flex justify-center items-center rounded">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
@@ -23,7 +23,7 @@
     </div>
 
     <!-- BreadCrumbs -->
-    <div class="flex items-center gap-x-2 px-4 text-sm">
+    <div class="flex items-center gap-x-2 px-4 text-sm mb-8">
       <span class="text-orange-500">تلفن همراه</span>
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" fill="none">
@@ -38,5 +38,41 @@
       </span>
       <span class="text-gray-500">آیفون 13</span>
     </div>
+
+    <!-- single product -->
+    <div class="px-4 flex flex-col items-center gap-y-9">
+      <div class="w-4/5 max-w-xs">
+        <img class="w-full h-auto" src="/assets/images/iphone-13.png" alt="iphone-13">
+      </div>
+      <div class="w-full">
+        <div class="mb-8 text-center">
+          <h1 class="text-slate-800 font-bold text-lg mb-1">آیفون ۱۳ مدل ۱۲۸ گیگابایت</h1>
+          <h2 class="font-thin text-gray-500">Apple Iphone 13 128 GB</h2>
+        </div>
+        <!-- color selection -->
+        <div class="flex items-center justify-evenly mb-5">
+          <span class="text-slate-800 font-medium">انتخاب رنگ :</span>
+          <div x-data="{color: 'red'}" class="flex items-center">
+            <div @click="color = 'red'" :class="color === 'red' ? 'ring-2 ring-red-400' : ''" class="w-7 h-7 sm:w-9 sm:h-9 flex items-center justify-center rounded-full cursor-pointer bg-red-400 border-2 border-white">
+              <svg x-show="color === 'red'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div @click="color = 'blue'" :class="color === 'blue' ? 'ring-2 ring-blue-400' : ''" class="w-7 h-7 sm:w-9 sm:h-9 flex items-center justify-center rounded-full cursor-pointer bg-blue-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'blue'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div @click="color = 'green'" :class="color === 'green' ? 'ring-2 ring-green-400' : ''" class="w-7 h-7 sm:w-9 sm:h-9 flex items-center justify-center rounded-full cursor-pointer bg-green-400 border-2 border-white -mr-1.5">
+              <svg x-show="color === 'green'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
   </body>
 </html>

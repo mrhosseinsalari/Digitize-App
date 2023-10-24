@@ -144,15 +144,15 @@
 
       <!-- product section -->
       <div class="col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-9">
-        <div class="flex bg-white rounded-lg md:p-4">
+        <div class="md:flex md:flex-col lg:flex-row md:bg-white rounded-lg md:p-4">
           <!-- single product -->
-          <div class="px-4 flex flex-col items-center gap-y-9 md:flex-auto md:flex-row md:justify-start md:items-start">
-            <div class="w-4/5 max-w-xs">
+          <div class="px-4 flex flex-col items-center gap-y-9 lg:flex-auto lg:flex-row lg:justify-start lg:items-start">
+            <div class="w-4/5 max-w-[250px] lg:max-w-[200px] xl:max-w-xs">
               <img class="w-full h-auto" src="/assets/images/iphone-13.png" alt="iphone-13">
             </div>
-            <div class="w-full md:w-auto md:mr-8">
-              <div class="mb-8 text-center md:text-right md:border-b md:border-b-slate-200 md:pb-5">
-                <h1 class="text-slate-800 font-bold text-lg mb-1 md:mb-3 md:text-2xl">آیفون ۱۳ مدل ۱۲۸ گیگابایت</h1>
+            <div class="w-full md:w-auto lg:mr-6 xl:mr-8">
+              <div class="mb-8 text-center lg:text-right md:border-b md:border-b-slate-200 md:pb-5">
+                <h1 class="text-slate-800 font-bold text-lg mb-1 md:mb-3 md:text-xl xl:text-2xl">آیفون ۱۳ مدل ۱۲۸ گیگابایت</h1>
                 <h2 class="font-thin text-gray-500 md:text-lg">Apple Iphone 13 128 GB</h2>
               </div>
       
@@ -225,11 +225,30 @@
                   <span class="font-light mr-2 mt-1">انبار تهران</span>
                 </div>
               </div>
+
+              <!-- product detail -->
+              <div class="text-slate-700 font-bold bg-white p-4 rounded-lg md:p-0 md:bg-none">
+                <h2 class="text-base md:text-lg xl:text-xl mb-5">ویژگی های کالا</h2>
+                <ul class="list-disc text-sm md:text-base xl:text-lg flex flex-col gap-y-2 marker:text-orange-500 list-inside">
+                  <li class="flex flex-col gap-y-2 lg:flex-row lg:gap-x-2">
+                    <span class="font-light text-slate-600">حافظه داخلی :</span>
+                    <span>256 گیگابایت</span>
+                  </li>
+                  <li class="flex flex-col gap-y-2 lg:flex-row lg:gap-x-2">
+                    <span class="font-light text-slate-600">اندازه صفحه نمایش: </span>
+                    <span>0.6 اینچ و بزرگتر</span>
+                  </li>
+                  <li class="flex flex-col gap-y-2 lg:flex-row lg:gap-x-2">
+                    <span class="font-light text-slate-600">شبکه های ارتباطی : </span>
+                    <span>2G &bull; 3G &bull; 4G &bull; 5G</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
           <!-- seller detail -->
-          <div class="w-1/4 bg-red-100"></div>
+          <div class="w-1/4 bg-red-100 hidden md:flex"></div>
         </div>
       </div>
     </div>

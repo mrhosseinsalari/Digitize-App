@@ -673,6 +673,9 @@ video {
 .mb-3{
   margin-bottom: 0.75rem;
 }
+.mb-4{
+  margin-bottom: 1rem;
+}
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -753,9 +756,6 @@ video {
 }
 .w-1\/2{
   width: 50%;
-}
-.w-1\/4{
-  width: 25%;
 }
 .w-12{
   width: 3rem;
@@ -847,6 +847,9 @@ video {
 .gap-y-3{
   row-gap: 0.75rem;
 }
+.gap-y-4{
+  row-gap: 1rem;
+}
 .gap-y-8{
   row-gap: 2rem;
 }
@@ -918,10 +921,6 @@ video {
 .bg-orange-500{
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-.bg-red-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 .bg-red-400{
   --tw-bg-opacity: 1;
@@ -1068,6 +1067,10 @@ video {
 .text-slate-800{
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow-\[0_-4px_8px_0px_rgba\(0\2c 0\2c 0\2c 0\.1\)\]{
   --tw-shadow: 0 -4px 8px 0px rgba(0,0,0,0.1);
@@ -1232,6 +1235,10 @@ video {
     flex-direction: column;
   }
 
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
   .md\:justify-start{
     justify-content: flex-start;
   }
@@ -1289,6 +1296,10 @@ video {
     padding-bottom: 1.25rem;
   }
 
+  .md\:text-right{
+    text-align: right;
+  }
+
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1314,12 +1325,8 @@ video {
     grid-column: span 9 / span 9;
   }
 
-  .lg\:mr-6{
-    margin-right: 1.5rem;
-  }
-
-  .lg\:max-w-\[200px\]{
-    max-width: 200px;
+  .lg\:mr-8{
+    margin-right: 2rem;
   }
 
   .lg\:flex-auto{
@@ -1332,14 +1339,6 @@ video {
 
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:items-start{
-    align-items: flex-start;
-  }
-
-  .lg\:justify-start{
-    justify-content: flex-start;
   }
 
   .lg\:gap-x-2{
@@ -1357,10 +1356,6 @@ video {
     padding-right: 1.5rem;
   }
 
-  .lg\:text-right{
-    text-align: right;
-  }
-
   .lg\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1376,8 +1371,20 @@ video {
     grid-column: span 9 / span 9;
   }
 
-  .xl\:mr-8{
-    margin-right: 2rem;
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .xl\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .xl\:block{
+    display: block;
+  }
+
+  .xl\:w-1\/4{
+    width: 25%;
   }
 
   .xl\:max-w-screen-2xl{
@@ -1394,6 +1401,10 @@ video {
 
   .xl\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
   }
 
   .xl\:text-2xl{

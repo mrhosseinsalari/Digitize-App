@@ -78,7 +78,7 @@
     </nav>
 
     <!-- content -->
-    <div class="md:px-4 lg:px-6 container mx-auto xl:max-w-screen-2xl grid grid-cols-12 xl:grid-cols-11 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mb-16 md:mb-5">
+    <div class="md:px-4 lg:px-6 container mx-auto xl:max-w-screen-2xl grid grid-cols-12 xl:grid-cols-11 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mb-24 md:mb-10">
       <!-- sidebar -->
       <div class="hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2">
         <div class="bg-white p-5 rounded-xl">
@@ -149,6 +149,17 @@
           <div class="px-4 flex flex-col items-center gap-y-9 lg:flex-auto lg:flex-row md:justify-start md:items-start md:mb-5 xl:mb-0">
             <div class="w-4/5 max-w-[250px] xl:max-w-xs">
               <img class="w-full h-auto" src="/assets/images/iphone-13.png" alt="iphone-13">
+              <div class="hidden lg:flex items-center justify-center gap-x-4 mt-4">
+                <div class="border rounded-md border-gray-400 p-2 w-20 h-24">
+                  <img class="w-full h-full" src="/assets/images/iphone-13.png" alt="iphone-13">
+                </div>
+                <div class="border rounded-md border-gray-400 p-2 w-20 h-24">
+                  <img class="w-full h-full" src="/assets/images/iphone-13.png" alt="iphone-13">
+                </div>
+                <div class="border rounded-md border-gray-400 p-2 w-20 h-24">
+                  <img class="w-full h-full" src="/assets/images/iphone-13.png" alt="iphone-13">
+                </div>
+              </div>
             </div>
             <div class="w-full md:w-auto lg:mr-8">
               <div class="mb-8 text-center md:text-right md:border-b md:border-b-slate-200 md:pb-5">
@@ -303,6 +314,15 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- fixed add to cart button -->
+    <div class="md:hidden fixed flex items-center justify-center left-0 right-0 bottom-0 w-full bg-white shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)] px-4 py-2 gap-x-4">
+      <button class="w-full sm:w-3/5 py-3 text-white bg-orange-500 rounded-md">افزودن به سبد خرید</button>
+      <div class="flex flex-col text-slate-800">
+        <span class="font-bold">۲۸,۲۵۰,۰۰۰</span>
+        <span class="text-gray-400 text-sm">تومان</span>
       </div>
     </div>
 

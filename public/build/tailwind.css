@@ -652,6 +652,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .-mr-1{
   margin-right: -0.25rem;
 }
@@ -1388,12 +1392,12 @@ video {
     grid-column: span 8 / span 8;
   }
 
-  .md\:mb-10{
-    margin-bottom: 2.5rem;
+  .md\:mb-16{
+    margin-bottom: 4rem;
   }
 
-  .md\:mb-14{
-    margin-bottom: 3.5rem;
+  .md\:mb-20{
+    margin-bottom: 5rem;
   }
 
   .md\:mb-3{

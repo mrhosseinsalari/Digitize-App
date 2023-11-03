@@ -45,12 +45,12 @@
         <!-- menu -->
         <ul class="flex items-center lg:gap-x-4 text-slate-800 lg:text-lg">
           <li>
-            <a class="block pl-4 py-2 w-28" href="#">
+            <a class="block pl-4 py-2 w-28" href="index.html">
               <img class="w-full" src="/assets/images/desktop-logo.png" alt="logo">
             </a>
           </li>
           <li>
-            <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-200" href="#">خانه</a>
+            <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-200" href="index.html">خانه</a>
           </li>
           <li>
             <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-200" href="#">تلفن همراه</a>
@@ -78,7 +78,7 @@
     </nav>
 
     <!-- content -->
-    <div class="md:px-4 lg:px-6 container mx-auto xl:max-w-screen-2xl grid grid-cols-12 xl:grid-cols-11 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mb-24 md:mb-10">
+    <div class="md:px-4 lg:px-6 container mx-auto xl:max-w-screen-2xl grid grid-cols-12 xl:grid-cols-11 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mb-24 md:mb-16">
       <!-- sidebar -->
       <div class="hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2">
         <div class="bg-white p-5 rounded-xl">
@@ -162,6 +162,18 @@
               </div>
             </div>
             <div class="w-full md:w-auto lg:mr-8">
+              <div class="my-4 hidden lg:flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="none">
+                  <path stroke="#FF755C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.125" d="M13 12.75v7.5c0 3-.75 3.75-3.75 3.75h-4.5c-3 0-3.75-.75-3.75-3.75v-7.5C1 9.75 1.75 9 4.75 9h4.5c3 0 3.75.75 3.75 3.75ZM8.5 11.625h-3"/>
+                  <path stroke="#FF755C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.125" d="M7 21.825A1.163 1.163 0 1 0 7 19.5a1.163 1.163 0 0 0 0 2.325Z"/>
+                  <circle cx="10.5" cy="9.5" r="9.5" fill="#FFCBCB" fill-opacity=".28"/>
+                </svg>
+                <div class="mt-1 text-orange-500">
+                  <span class="mr-2">تلفن همراه</span>
+                  <span class="mr-2">اپل</span>
+                </div>
+              </div>
+
               <div class="mb-8 text-center md:text-right md:border-b md:border-b-slate-200 md:pb-5">
                 <h1 class="text-slate-800 font-bold text-lg mb-1 md:mb-3 md:text-xl xl:text-2xl">آیفون ۱۳ مدل ۱۲۸ گیگابایت</h1>
                 <h2 class="font-thin text-gray-500 md:text-lg">Apple Iphone 13 128 GB</h2>
@@ -309,7 +321,7 @@
               </div>
               <div class="text-center xl:mt-10">
                 <div class="w-full text-orange-500 font-bold text-xl mb-4">۲۸,۲۵۰,۰۰۰ تومان</div>
-                <button class="w-full py-3 text-white bg-orange-500 rounded-md">افزودن به سبد خرید</button>
+                <button onclick="window.location.href='cart.html';" class="w-full py-3 text-white bg-orange-500 rounded-md">افزودن به سبد خرید</button>
               </div>
             </div>
           </div>
@@ -319,7 +331,7 @@
 
     <!-- fixed add to cart button -->
     <div class="md:hidden fixed flex items-center justify-center left-0 right-0 bottom-0 w-full bg-white shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)] px-4 py-2 gap-x-4">
-      <button class="w-full sm:w-3/5 py-3 text-white bg-orange-500 rounded-md">افزودن به سبد خرید</button>
+      <button onclick="window.location.href='cart.html';" class="w-full sm:w-3/5 py-3 text-white bg-orange-500 rounded-md">افزودن به سبد خرید</button>
       <div class="flex flex-col text-slate-800">
         <span class="font-bold">۲۸,۲۵۰,۰۰۰</span>
         <span class="text-gray-400 text-sm">تومان</span>
@@ -331,7 +343,7 @@
       <div class="px-4 lg:px-8 xl:px-12 container mx-auto xl:max-w-screen-2xl flex justify-between gap-x-8 xl:gap-x-0 text-slate-800 min-h-[250px]">
         <div class="flex flex-col basis-1/2 gap-y-6 self-center pt-10 lg:pt-0">
           <div class="flex items-center">
-            <a class="block w-32" href="#">
+            <a class="block w-32" href="index.html">
               <img class="w-full" src="/assets/images/footer-logo.png" alt="logo">
             </a>
             <span class="w-12 h-1 rounded-lg bg-orange-500 mr-3"></span>

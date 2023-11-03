@@ -269,7 +269,7 @@
       <div class="col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-9">
         <div
          x-data="{ products: [1, 2, 3, 4, 5, 6, 7, 8] }"
-         class="grid gap-x-2 gap-y-8 grid-cols-2 px-2 min-[375px]:px-4 md:px-0 lg:grid-cols-3 xl:grid-cols-5 min-[375px]:gap-x-4 md:gap-x-6 md:gap-y-10 mb-10">
+         class="grid gap-x-2 gap-y-8 grid-cols-2 px-2 min-[375px]:px-4 md:px-0 lg:grid-cols-3 xl:grid-cols-5 min-[375px]:gap-x-4 md:gap-x-6 md:gap-y-10 mb-14">
           <!-- single product -->
           <template x-for="product in products">
             <div class="bg-white p-2 shadow-md rounded-xl">
@@ -361,6 +361,62 @@
         </ul>
       </nav>
     </div>
+
+    <!-- footer -->
+    <footer class="bg-white hidden md:block pb-10">
+      <div class="px-4 lg:px-8 xl:px-12 container mx-auto xl:max-w-screen-2xl flex justify-between gap-x-8 xl:gap-x-0 text-slate-800 min-h-[250px]">
+        <div class="flex flex-col basis-1/2 gap-y-6 self-center pt-10 lg:pt-0">
+          <div class="flex items-center">
+            <a class="block w-32" href="#">
+              <img class="w-full" src="/assets/images/footer-logo.png" alt="logo">
+            </a>
+            <span class="w-12 h-1 rounded-lg bg-orange-500 mr-3"></span>
+          </div>
+          <div class="text-xl xl:text-2xl text-justify xl:w-[650px]">
+            <p class="leading-normal">
+              دیجی تایز عرضه کننده جدیدترین محصولات الکترونیک نظیر
+              لپ تاپ، گوشی هوشمند و ساعت هوشمند میباشد.
+            </p>
+            <p class="leading-normal">
+              دیجی تایز افتخار این را داشته که به <span class="text-orange-500 font-bold">۲۳۲,۱۲۲ نفر</span> تا به کنون
+              خدمت رسانی داشته باشد.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col pr-6 lg:pr-14 xl:pr-32 basis-1/4 text-lg xl:text-xl self-end">
+          <h3 class="font-bold mb-4">محصولات</h3>
+          <ul class="flex flex-col gap-y-2">
+            <li>
+              <a class="block py-2 hover:text-orange-500 transition-all duration-200" href="#">تلفن همراه</a>
+            </li>
+            <li>
+              <a class="block py-2 hover:text-orange-500 transition-all duration-200" href="#">لپ تاپ</a>
+            </li>
+            <li>
+              <a class="block py-2 hover:text-orange-500 transition-all duration-200" href="#">ساعت هوشمند</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-center basis-1/4 self-end pt-10">
+          <div class="flex flex-col items-end">
+            <a class="block lg:w-52 h-auto" href="#">
+              <img class="w-full h-full" src="/assets/images/map.png" alt="map">
+            </a>
+            <div class="flex mt-5 gap-x-2 pl-3">
+              <div class="flex flex-col items-end gap-y-1 lg:text-lg">
+                <span>۰۲۱-۱۲۳۴۵۶</span>
+                <span>info@digitize.com</span>
+              </div>
+              <span class="text-orange-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                  <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd" />
+                </svg>              
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="//unpkg.com/alpinejs" defer></script>
   </body>

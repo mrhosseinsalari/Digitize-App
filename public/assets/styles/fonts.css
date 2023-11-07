@@ -2,14 +2,14 @@
   font-family: "vazir";
   font-weight: 400;
   font-style: normal;
-  src: url("/public/assets/fonts/Vazir.woff") format("woff");
+  src: url("/assets/fonts/Vazir.woff") format("woff");
 }
 
 @font-face {
   font-family: "vazir";
   font-weight: 700;
   font-style: normal;
-  src: url("/public/assets/fonts/Vazir-Bold.woff") format("woff");
+  src: url("/assets/fonts/Vazir-Bold.woff") format("woff");
 }
 
 body,

@@ -9,6 +9,10 @@ This project was developed with Tailwind CSS & Alpine.js .
  - [x] Fully responsive design
  - [x] Mobile-first approach
  - [x] Setting container in 2xl screen sizes
+## Installation
+```
+$ npm install
+```
 ## Available Scripts
 In the project directory, you can run:
 ### `npm run dev`

@@ -74,16 +74,15 @@
       class="flex flex-col gap-y-3 md:gap-y-4 flex-1"
       x-data="{
         products: [
-          {id:1, quantity:'۱'},
-          {id:2, quantity:'۳'},
-          {id:3, quantity:'۱'},
-          {id:4, quantity:'۲'},
+          {id:1, image:'./assets/images/image-1.png', quantity:'۱'},
+          {id:2, image:'./assets/images/image-2.png', quantity:'۳'},
+          {id:3, image:'./assets/images/image-3.png', quantity:'۲'},
         ]
       }">
         <template x-for="product in products" :key="product.id">
           <div class="bg-white rounded-lg p-3 flex items-stretch justify-between shadow-lg">
             <div class="w-14 md:w-20 h-auto">
-              <img class="w-full h-auto" src="./assets/images/iphone-13.png" alt="iphone-13">
+              <img class="w-full h-auto" :src="product.image" alt="iphone-13">
             </div>
             <div class="flex flex-col justify-between text-xs min-[375px]:text-sm md:text-base lg:text-lg font-bold flex-1 mr-4 md:mr-6">
               <span class="text-slate-800">آیفون ۱۳ مدل ۱۲۸ گیگابایت</span>

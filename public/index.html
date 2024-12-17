@@ -269,14 +269,25 @@
       <!-- products section -->
       <div class="col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-9">
         <div
-         x-data="{ products: [1, 2, 3, 4, 5, 6, 7, 8] }"
+         x-data="{ 
+          products: [
+            { id: 1, image: './assets/images/image-1.png' },
+            { id: 2, image: './assets/images/image-2.png' },
+            { id: 3, image: './assets/images/image-3.png' },
+            { id: 4, image: './assets/images/image-4.png' },
+            { id: 5, image: './assets/images/image-5.png' },
+            { id: 6, image: './assets/images/image-1.png' },
+            { id: 7, image: './assets/images/image-2.png' },
+            { id: 8, image: './assets/images/image-3.png' },
+          ]
+        }"
          class="grid gap-x-2 gap-y-8 grid-cols-2 px-2 min-[375px]:px-4 md:px-0 lg:grid-cols-3 xl:grid-cols-5 min-[375px]:gap-x-4 md:gap-x-6 md:gap-y-10 mb-14">
           <!-- single product -->
-          <template x-for="product in products">
+          <template x-for="product in products" :key="product.id">
             <div class="bg-white p-2 shadow-md rounded-xl">
               <!-- product img -->
               <div class="mb-3 bg-gray-200 rounded-xl px-6 py-3 flex justify-center items-center">
-                <img src="./assets/images/iphone-13.png" alt="">
+                <img :src="product.image" alt="iphone-13">
               </div>
       
               <!-- product desc -->
